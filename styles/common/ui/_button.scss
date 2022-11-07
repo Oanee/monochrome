@@ -1,4 +1,28 @@
 .button {
   background-color: transparent;
-  border: 1px solid #2b2b2b;
+  border: 1px solid $brand-primary;
+  display: inline-block;
+  text-align: center;
+  padding: 1px 6px;
+  cursor: pointer;
+}
+
+.button-small {
+  text-transform: uppercase;
+}
+
+.button-large {
+  width: 206px;
+  height: 42px;
+  border: 1px solid $white-tertiary;
+}
+
+.button-black {
+  background-color: $brand-primary;
+  color: $white-primary;
+}
+
+.button-mobile {
+  background-color: $white-primary;
+  border: none;
 }
