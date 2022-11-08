@@ -3,26 +3,42 @@
   border: 1px solid $brand-primary;
   display: inline-block;
   text-align: center;
-  padding: 1px 6px;
+  text-transform: lowercase;
+  width: 112px;
+  height: 50px;
   cursor: pointer;
-}
 
-.button-small {
-  text-transform: uppercase;
-}
+  &-uppercase {
+    text-transform: uppercase;
+  }
 
-.button-large {
-  width: 206px;
-  height: 42px;
-  border: 1px solid $white-tertiary;
-}
+  &-small {
+    font-size: 12px;
+    height: 25px;
+    width: 75px;
+  }
 
-.button-black {
-  background-color: $brand-primary;
-  color: $white-primary;
-}
+  &-large {
+    width: 206px;
+    height: 42px;
+    border: 1px solid $white-tertiary;
+    font-size: 16px;
+  }
 
-.button-mobile {
-  background-color: $white-primary;
-  border: none;
+  &-black {
+    background-color: $brand-primary;
+    color: $white-primary;
+  }
+
+  &-mobile {
+    background-color: $white-primary;
+    border: none;
+    width: 70px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  &-anchor {
+    padding: 8px 0;
+  }
 }
