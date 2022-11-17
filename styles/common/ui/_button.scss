@@ -1,5 +1,5 @@
 .button {
-  background-color: transparent;
+  background-color: $gray-primary;
   border: 1px solid $brand-primary;
   display: inline-block;
   text-align: center;
@@ -21,24 +21,12 @@
   &-large {
     width: 206px;
     height: 42px;
-    border: 1px solid $white-tertiary;
+    border: 1px solid $gray-tertiary;
     font-size: 16px;
   }
 
   &-black {
     background-color: $brand-primary;
-    color: $white-primary;
-  }
-
-  &-mobile {
-    background-color: $white-primary;
-    border: none;
-    width: 70px;
-    height: 20px;
-    font-size: 10px;
-  }
-
-  &-anchor {
-    padding: 8px 0;
+    color: $gray-primary;
   }
 }

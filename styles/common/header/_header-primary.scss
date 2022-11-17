@@ -1,0 +1,50 @@
+.header-primary {
+  background-color: $brand-primary;
+  padding: 10px 0;
+
+  &-inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-menu i {
+    font-size: 30px;
+    color: $gray-primary;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-search {
+    form {
+      border: 1px solid $gray-tertiary;
+      height: 30px;
+      display: flex;
+      align-items: center;
+
+      input {
+        &[type='search'] {
+          font-family: 'Roboto';
+          font-style: italic;
+          font-weight: 500;
+          background-color: transparent;
+          border: 0;
+        }
+
+        &::placeholder {
+          font-size: 10px;
+        }
+      }
+
+      button {
+        color: $gray-tertiary;
+        border: 0;
+        background-color: transparent;
+
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
