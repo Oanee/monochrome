@@ -1,0 +1,13 @@
+.banner-main {
+  background: $brand-primary url('/images/banners/banner-tiny.png') center
+    center / cover no-repeat;
+  height: 177px;
+  position: relative;
+
+  .banner-cta {
+    right: 0;
+    bottom: 30px;
+    position: absolute;
+    margin: auto;
+  }
+}
