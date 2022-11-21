@@ -1,2 +1,19 @@
-@import './footer-primary';
-@import './footer-secondary';
+@import './footer-nav';
+@import './footer-connect';
+@import './footer-contact';
+
+.footer {
+  background-color: $gray-secondary;
+  padding-bottom: 35px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 40px 0 70px 0;
+  }
+
+  &-inner {
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,12 +1,12 @@
-export default function FooterSecondary() {
+export default function FooterConnect() {
   return (
     <>
-      <header className="footer-secondary-connect">
-        <div className="footer-secondary-connect-newsletter">
-          <div className="footer-secondary-connect-newsletter-title">
-            <h1>Let's connect</h1>
-          </div>
-          <form>
+      <div className="footer-connect-newsletter">
+        <div className="footer-connect-newsletter-title d-lg-none">
+          <h1>Let's connect</h1>
+        </div>
+        <form>
+          <div className="header-first d-lg-none">
             <label for="email">Be the first to receive exclusives offers</label>
             <div className="form-email">
               <input
@@ -17,7 +17,22 @@ export default function FooterSecondary() {
                 required
               />
             </div>
+          </div>
 
+          <div className="header-second d-none d-lg-block">
+            <label for="email">sign up for our newsletter</label>
+            <div className="form-email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email address"
+                required
+              />
+            </div>
+          </div>
+
+          <div className="form-footer">
             <div className="form-cta">
               <button
                 type="submit"
@@ -40,12 +55,12 @@ export default function FooterSecondary() {
                 and i want to receive emails from Monochrome
               </label>
             </div>
-          </form>
-        </div>
-      </header>
+          </div>
+        </form>
+      </div>
 
-      <footer className="footer-secondary-social">
-        <div className="footer-secondary-connect-social-title">
+      <footer className="footer-connect-social">
+        <div className="footer-connect-social-title d-lg-none">
           <h1>We are highly likeable</h1>
         </div>
 

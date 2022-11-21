@@ -1,13 +1,13 @@
 import Link from 'next/link';
 
-export default function FooterPrimary() {
+export default function FooterNav() {
   return (
     <>
-      <header className="footer-primary-title">
+      <header className="footer-nav-title d-lg-none">
         <h1>How can we help?</h1>
       </header>
 
-      <div className="footer-primary-nav">
+      <div className="footer-nav-main">
         <ul>
           <li>
             <Link href="/" title="about us">
@@ -34,7 +34,7 @@ export default function FooterPrimary() {
           </li>
         </ul>
 
-        <div className="footer-primary-nav-line"></div>
+        <div className="footer-nav-main-line d-lg-none"></div>
 
         <ul>
           <li>
@@ -63,7 +63,7 @@ export default function FooterPrimary() {
         </ul>
       </div>
 
-      <footer className="footer-primary-terms">
+      <footer className="footer-nav-terms d-lg-none">
         <Link href="/" title="terms">
           terms & conditions
         </Link>
