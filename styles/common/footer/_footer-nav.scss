@@ -23,6 +23,8 @@
     line-height: 38px;
     display: flex;
     justify-content: space-evenly;
+    max-width: 540px;
+    margin: 0 auto;
 
     @include media-breakpoint-up(lg) {
       font-size: 22px;

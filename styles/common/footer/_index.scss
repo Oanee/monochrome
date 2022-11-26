@@ -11,6 +11,9 @@
   }
 
   &-inner {
+    max-width: unset;
+    padding: 0;
+
     @include media-breakpoint-up(lg) {
       display: flex;
       justify-content: space-between;
