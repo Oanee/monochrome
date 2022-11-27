@@ -1,0 +1,57 @@
+.product-tile {
+  &-image {
+    position: relative;
+
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    height: 20px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 40px;
+      right: 20px;
+      top: 20px;
+      height: 40px;
+    }
+
+    i {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-footer {
+    text-align: center;
+
+    h1 {
+      font-size: 16px;
+      line-height: 21px;
+      margin: 0 auto;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 22px;
+        line-height: 39px;
+        letter-spacing: 0.79px;
+      }
+    }
+
+    &-pricing {
+      font-size: 16px;
+      line-height: 28px;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 22px;
+        letter-spacing: 0.79px;
+        line-height: 39px;
+      }
+    }
+  }
+}

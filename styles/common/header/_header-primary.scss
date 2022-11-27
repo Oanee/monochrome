@@ -2,6 +2,10 @@
   background-color: $brand-primary;
   padding: 10px 0;
 
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 20px;
+  }
+
   .header-primary-inline {
     display: flex;
     justify-content: space-between;

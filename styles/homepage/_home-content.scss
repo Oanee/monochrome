@@ -1,0 +1,56 @@
+.home-content {
+  @include media-breakpoint-up(lg) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 140px;
+    margin-bottom: 100px;
+  }
+
+  &-image {
+    margin-bottom: 26px;
+
+    @include media-breakpoint-up(lg) {
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      height: 176px;
+      object-fit: cover;
+      border: 1px solid $brand-secondary;
+
+      @include media-breakpoint-up(lg) {
+        height: auto;
+      }
+    }
+  }
+
+  &-main {
+    h1 {
+      font-size: 18px;
+      line-height: 33px;
+      letter-spacing: 0.27px;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 44px;
+        letter-spacing: 0.66px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      letter-spacing: 0.24px;
+      line-height: 32px;
+      font-family: 'Roboto';
+
+      @include media-breakpoint-up(lg) {
+        font-size: 22px;
+        letter-spacing: 0.33px;
+        line-height: 43px;
+        margin-bottom: 70px;
+      }
+    }
+  }
+}
