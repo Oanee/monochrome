@@ -12,6 +12,12 @@
   align-items: center;
   font-family: 'Roboto';
   font-weight: 500;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $brand-primary;
+    color: $gray-secondary;
+  }
 
   &-uppercase {
     text-transform: uppercase;
