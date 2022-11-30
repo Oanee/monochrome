@@ -1,6 +1,10 @@
 .home-catalog-preview {
   margin-bottom: 20px;
 
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 60px;
+  }
+
   &:nth-child(2),
   &:nth-child(3) {
     .home-catalog-preview-cta {
@@ -32,17 +36,14 @@
 
   &-product {
     .product-tiles {
-      display: flex;
-      justify-content: space-between;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+      grid-gap: 10px;
       margin-bottom: 24px;
 
       @include media-breakpoint-up(lg) {
         grid-template-columns: repeat(4, 1fr);
-        gap: 24px;
-        margin-bottom: 60px;
+        grid-gap: 24px;
       }
     }
   }

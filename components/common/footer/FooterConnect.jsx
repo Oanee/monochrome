@@ -6,30 +6,22 @@ export default function FooterConnect() {
           <h1>Let's connect</h1>
         </div>
         <form>
-          <div className="header-first d-lg-none">
-            <label for="email">Be the first to receive exclusives offers</label>
-            <div className="form-email">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                required
-              />
-            </div>
-          </div>
+          <label for="email" className="d-lg-none">
+            Be the first to receive exclusives offers
+          </label>
 
-          <div className="header-second d-none d-lg-block">
-            <label for="email">sign up for our newsletter</label>
-            <div className="form-email">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email address"
-                required
-              />
-            </div>
+          <label for="email" className="d-none d-lg-block">
+            sign up for our newsletter
+          </label>
+
+          <div className="form-email">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
           </div>
 
           <div className="form-footer">

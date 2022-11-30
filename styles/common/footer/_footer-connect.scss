@@ -18,50 +18,50 @@
       font-family: 'Roboto';
       font-weight: 500;
 
-      .header-first {
-        label {
-          font-size: 16px;
-          line-height: 20px;
-        }
+      label {
+        font-size: 16px;
+        line-height: 20px;
 
-        .form-email {
-          display: flex;
-          justify-content: center;
-
-          input {
-            width: 280px;
-            padding-left: 10px;
-            color: $black-primary;
-            font-weight: 700;
-            border: 1px solid $gray-tertiary;
-
-            &::placeholder {
-              font-size: 16px;
-              color: $black-primary;
-              font-weight: 700;
-            }
-          }
-        }
-      }
-
-      .header-second {
-        label {
+        @include media-breakpoint-up(lg) {
           font-family: 'Playfair Display', serif;
           font-size: 22px;
           line-height: 38px;
         }
+      }
 
-        .form-email {
-          display: flex;
+      .form-email {
+        display: flex;
+        justify-content: center;
 
-          input {
+        @include media-breakpoint-up(lg) {
+          justify-content: flex-start;
+        }
+
+        input {
+          width: 280px;
+          padding-left: 10px;
+          color: $black-primary;
+          font-weight: 700;
+          border: 1px solid $gray-tertiary;
+
+          @include media-breakpoint-up(lg) {
             width: 360px;
             padding-left: 10px;
             border: 1px solid $gray-tertiary;
+            font-weight: 500;
+          }
 
-            &::placeholder {
+          &::placeholder {
+            font-size: 16px;
+            color: $black-primary;
+            font-weight: 700;
+
+            @include media-breakpoint-up(lg) {
               font-style: italic;
               font-size: 18px;
+              color: inherit;
+              font-weight: 500;
+              color: inherit;
             }
           }
         }
@@ -81,7 +81,13 @@
           @include media-breakpoint-up(lg) {
             justify-content: flex-start;
             padding: 0;
-            margin: 10px 0;
+            margin-bottom: 10px;
+
+            button {
+              width: 90px;
+              height: 30px;
+              font-size: 16px;
+            }
           }
         }
 
@@ -92,19 +98,28 @@
 
           @include media-breakpoint-up(lg) {
             justify-content: flex-start;
-            padding: 10px 40% 0 0;
+            padding: 10px 0;
+            width: 333px;
           }
 
           input {
             height: 16px;
-            width: 16px;
-            display: flex;
             margin-right: 5px;
           }
 
           label {
             text-align: start;
             font-size: 12px;
+            line-height: 16px;
+
+            @include media-breakpoint-up(lg) {
+              font-size: 16px;
+              line-height: 21px;
+            }
+
+            span {
+              text-decoration: underline;
+            }
           }
         }
       }

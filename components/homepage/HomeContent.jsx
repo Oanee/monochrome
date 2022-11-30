@@ -2,11 +2,7 @@ export default function HomeContent() {
   return (
     <>
       <section className="home-content container">
-        <aside className="home-content-image">
-          <picture>
-            <img src="/images/accesory/accesory.png" alt="Accesorii" />
-          </picture>
-        </aside>
+        <aside className="home-content-image"></aside>
 
         <div className="home-content-main">
           <div className="home-content-main-title">
