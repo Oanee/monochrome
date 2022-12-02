@@ -1,16 +1,16 @@
 import Link from 'next/link';
 import ProductTile from '../catalog/ProductTile';
 
-export default function HomeCatalogPreviewLarge() {
+export default function HomeCatalogPreviewWomen() {
   return (
     <>
-      <section className="home-catalog-preview-men container">
+      <section className="home-catalog-preview-women container">
         <header>
-          <div className="home-catalog-preview-men-title">
-            <h1>Men's</h1>
+          <div className="home-catalog-preview-women-title">
+            <h1>Women's</h1>
           </div>
 
-          <div className="home-catalog-preview-men-description">
+          <div className="home-catalog-preview-women-description">
             <p>
               But I must explain to you how all this mistaken idea of denouncing
               pleasure and praising pain was born and I will give you a complete
@@ -19,7 +19,7 @@ export default function HomeCatalogPreviewLarge() {
           </div>
         </header>
 
-        <ul className="home-catalog-preview-men-filter">
+        <ul className="home-catalog-preview-women-filter">
           <li>
             <Link href="/" className="button button-uppercase button-large">
               Bestsellers
@@ -57,7 +57,7 @@ export default function HomeCatalogPreviewLarge() {
           </li>
         </ul>
 
-        <div className="home-catalog-preview-men-product">
+        <div className="home-catalog-preview-women-product">
           <ul className="product-tiles">
             <li>
               <ProductTile></ProductTile>
@@ -167,7 +167,7 @@ export default function HomeCatalogPreviewLarge() {
           </ul>
         </div>
 
-        <footer className="home-catalog-preview-men-cta">
+        <footer className="home-catalog-preview-women-cta">
           <a title="load more" className="button button-small">
             load more
           </a>

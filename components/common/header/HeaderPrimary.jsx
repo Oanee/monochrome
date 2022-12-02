@@ -48,7 +48,7 @@ export default function HeaderPrimary() {
             </li>
 
             <li>
-              <Link href="/" title="Women's">
+              <Link href="/women" title="Women's">
                 Women's
               </Link>
             </li>
