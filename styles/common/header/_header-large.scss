@@ -1,0 +1,36 @@
+.header-large {
+  .header-secondary {
+    background: none;
+    height: auto;
+
+    .header-inner {
+      justify-content: space-between;
+      display: grid;
+      grid-template-areas:
+        'top top'
+        'left right';
+      grid-gap: 45px;
+    }
+
+    .header-connect {
+      ul {
+        color: inherit;
+        grid-area: left;
+      }
+    }
+    .header-logo {
+      display: block;
+      grid-area: top;
+      text-align: center;
+
+      h1 {
+        font-size: 59px;
+        line-height: 78px;
+        align-items: center;
+      }
+      .header-controls {
+        grid-area: right;
+      }
+    }
+  }
+}

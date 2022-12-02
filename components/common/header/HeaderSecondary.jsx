@@ -52,7 +52,7 @@ export default function HeaderSecondary() {
           </ul>
         </div>
 
-        <div className="header-logo d-lg-none">
+        <div className="header-logo">
           <a href="/" title="Monochrome">
             <h1>Monochrome</h1>
           </a>
