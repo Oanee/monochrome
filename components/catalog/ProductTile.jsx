@@ -6,7 +6,7 @@ export default function ProductTile() {
       <div className="product-tile">
         <header className="product-tile-header">
           <div className="product-tile-image">
-            <Link href="/" title="Black watch">
+            <Link href="/product" title="Black watch">
               <picture>
                 <img src="/images/products/black1.png" alt="Watch" />
               </picture>
@@ -22,13 +22,13 @@ export default function ProductTile() {
 
         <footer className="product-tile-footer">
           <div className="product-tile-title">
-            <Link href="/" title="Black watch">
+            <Link href="/product" title="Black watch">
               <h1>Monochrome</h1>
             </Link>
           </div>
 
           <div className="product-tile-footer-pricing">
-            <Link href="/" title="Black watch">
+            <Link href="/product" title="Black watch">
               $425
             </Link>
           </div>

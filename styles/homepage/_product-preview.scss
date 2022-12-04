@@ -1,0 +1,188 @@
+.product-preview {
+  margin-top: 15px;
+
+  @include media-breakpoint-up(lg) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 140px;
+    margin: 0 auto;
+  }
+
+  &-line {
+    content: '';
+    height: 1px;
+    background-color: $gray-tertiary;
+
+    &-vertical {
+      content: '';
+      height: 70px;
+      width: 1px;
+      background-color: $gray-tertiary;
+    }
+  }
+
+  &-image {
+    img {
+      width: 100%;
+    }
+
+    &-footer {
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+        margin: 27px 0;
+        align-items: center;
+        grid-gap: 24px;
+
+        img {
+          width: 100%;
+        }
+
+        &:last-of-type {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+
+      &-full {
+        text-align: center;
+        text-decoration: underline;
+        font-weight: 700;
+        color: $brand-secondary;
+      }
+    }
+  }
+
+  &-right {
+    max-width: 436px;
+
+    &-title {
+      margin: 20px 0;
+      text-align: center;
+
+      @include media-breakpoint-up(lg) {
+        text-align: left;
+      }
+
+      h1 {
+        font-size: 25px;
+        line-height: 22px;
+      }
+    }
+
+    &-description {
+      font-family: 'Roboto';
+
+      &-title {
+        margin: 16px 0 22px 0;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+          text-align: left;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+      }
+
+      &-content {
+        margin-bottom: 27px;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+          text-align: left;
+        }
+
+        p {
+          font-size: 18px;
+          margin: 0;
+        }
+      }
+    }
+
+    &-details {
+      ul {
+        li {
+          display: flex;
+          justify-content: space-between;
+          margin: 14px 0;
+          font-size: 20px;
+        }
+      }
+    }
+
+    &-cta {
+      margin: 25px 0 60px 0;
+
+      form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 18px;
+
+        div {
+          display: grid;
+          grid-template-columns: 1fr 3fr;
+          border: 1px solid $gray-secondary;
+          width: 100%;
+
+          button {
+            border: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-family: 'Roboto';
+          }
+
+          label {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    &-shipping {
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    &-follow {
+      ul {
+        display: flex;
+        font-size: 30px;
+        gap: 20px;
+        justify-content: center;
+      }
+    }
+
+    &-information {
+      margin: 14px 0 34px 0;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        color: $brand-secondary;
+
+        li {
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 18px;
+          font-family: 'Roboto';
+          width: 100px;
+
+          span {
+            text-transform: none;
+          }
+
+          &:last-child {
+            width: 130px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,8 +5,8 @@
     margin-bottom: 60px;
   }
 
-  &:nth-child(2),
-  &:nth-child(3) {
+  &:first-of-type,
+  &:nth-of-type(2) {
     .home-catalog-preview-cta {
       display: none;
     }
